@@ -1,0 +1,151 @@
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+    margin-left:30px;
+  }
+
+  .group div:first-child{
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+.groupName{
+    display: flex;
+    align-items: center;
+    margin:20px;
+}
+
+.note{
+    height:100%;
+    width: 100%;
+    background-color: white;
+}
+
+header{
+    background-color: #001F8B;
+    height: 13%;
+    width: 100%;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    height:30%;
+    width:100%;
+    display: flex;
+    background-color: #001F8B;
+}
+footer textarea{
+    height:65%;
+    width:100%;
+    margin: 30px 30px 50px 30px;
+    padding:20px;
+}
+
+.submit{
+  all:unset;
+  position: absolute;
+  bottom:10%;
+  right:5%;
+
+}
+
+.submit2{
+    all:unset;
+    position: absolute;
+    bottom:10%;
+    right:5%;
+    opacity: .4;
+  }
+.mid{
+    height:57%;
+    width:100%;
+    background-color: #DAE5F5 ;
+    overflow: scroll;
+}
+
+.notes1{
+  background-color: white;
+  width: 90%;
+  margin:30px;
+  padding: 30px 20px 10px 20px;
+  text-align: left;
+}
+
+.dateTime{
+  display: flex;
+justify-content: flex-end;
+margin-top:5%;
+margin-right:5%;
+
+}
+
+.arrow{
+   font-size: 2rem;
+   margin-left: 2%;
+   display: none;
+}
+
+@media screen and (min-width: 500px){
+    header{
+        background-color: #001F8B;
+        height: 13%;
+        width: 100%;
+        color:white;
+        display: flex;
+        align-items: center;
+    }
+    
+    footer{
+        height:30%;
+        width:72%;
+        display: flex;
+        background-color: #001F8B;
+    }
+    .mid{
+        position: absolute;
+        top:13%;
+        height:57%;
+        width:72%;
+        background-color: #DAE5F5 ;
+        overflow: scroll;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .arrow{
+        display:block;
+    }
+    .notes1{
+        margin-right:50px;
+        width:80%;
+    }
+    .submit{
+        all:unset;
+        position: absolute;
+        bottom:10%;
+        right:8%;
+      
+      }
+      
+      .submit2{
+          all:unset;
+          position: absolute;
+          bottom:10%;
+          right:8%;
+          opacity: .4;
+        }
+}
