@@ -103,8 +103,11 @@ useEffect(() => {
   }
 }, []);
 
-  return (
-    <div className={styles.app}>
+  return (<>
+    {group && (
+      <CreateGroup className={styles.creategroup} noteHeading={noteHeading} setNoteHeading={setNoteHeading} setSelectedColorIndex={setSelectedColorIndex} handleCreateGroup={handleCreateGroup} popupRef={popupRef}/>
+    )}
+    <div className={group? styles.app1:styles.app}>
       <div className={selectedGroupName? styles.left1:styles.left}>
         <h1> Pocket Notes </h1>
         {groupNames.map((group, index) => (
@@ -124,9 +127,7 @@ useEffect(() => {
         ))}
         <button onClick={handlePlusButtonClick}> + </button>
       </div>
-      {group? (
-        <CreateGroup className={styles.creategroup} noteHeading={noteHeading} setNoteHeading={setNoteHeading} setSelectedColorIndex={setSelectedColorIndex} handleCreateGroup={handleCreateGroup} popupRef={popupRef}/>
-      ):null}
+      
       <div className={ selectedGroupName? styles.right1: styles.right}>
         {selectedGroupName? (
           
@@ -145,7 +146,9 @@ useEffect(() => {
         
       </div>
     </div>
+    </>
   );
+  
 }
 
 export default Dashboard;

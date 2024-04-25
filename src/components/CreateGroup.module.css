@@ -87,6 +87,9 @@
     padding: 1%;
     border-radius: 10px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media screen and (max-width:500px) {
@@ -124,5 +127,8 @@
       .groupbutton button{
         height: 25%;
         width:60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
   }
