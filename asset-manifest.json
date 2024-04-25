@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/React_Note_App/static/css/main.15c47c71.css",
+    "main.js": "/React_Note_App/static/js/main.e4b13c59.js",
+    "static/js/453.4040e399.chunk.js": "/React_Note_App/static/js/453.4040e399.chunk.js",
+    "static/media/image-removebg-preview1.png": "/React_Note_App/static/media/image-removebg-preview1.0251acb678aa9e2176b4.png",
+    "index.html": "/React_Note_App/index.html",
+    "main.15c47c71.css.map": "/React_Note_App/static/css/main.15c47c71.css.map",
+    "main.e4b13c59.js.map": "/React_Note_App/static/js/main.e4b13c59.js.map",
+    "453.4040e399.chunk.js.map": "/React_Note_App/static/js/453.4040e399.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15c47c71.css",
+    "static/js/main.e4b13c59.js"
+  ]
+}
